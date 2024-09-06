@@ -4,7 +4,7 @@
 // @version      2024-09-05
 // @description  Color rows based on log levels
 // @author       yunemregul
-// @include      *cloud.logs.services.*.hana.ondemand.com/app/discover
+// @match        *://*.hana.ondemand.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=elastic.co
 // @grant        none
 // ==/UserScript==
