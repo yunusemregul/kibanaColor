@@ -7,6 +7,7 @@
 // @match        *://*.hana.ondemand.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=elastic.co
 // @grant        none
+// @run-at       document-end
 // ==/UserScript==
 
 (function () {
@@ -49,7 +50,7 @@
     function addCustomStyles() {
         const style = document.createElement('style');
         style.textContent = `
-            .truncate-by-height {
+            div.truncate-by-height {
                 overflow: scroll !important;
                 max-height: 300px !important;
             }
