@@ -29,7 +29,7 @@
 
     function colorRows() {
         const allTableCells = Array.from(document.querySelectorAll('div.truncate-by-height span[ng-non-bindable]'))
-        .filter(cell => cell.closest('tr') && !cell.closest('tr').dataset.colored);
+            .filter(cell => cell.closest('tr') && !cell.closest('tr').dataset.colored);
 
         allTableCells.forEach(cell => {
             try {
@@ -46,5 +46,17 @@
         });
     }
 
+    function addCustomStyles() {
+        const style = document.createElement('style');
+        style.textContent = `
+            .truncate-by-height {
+                overflow: scroll !important;
+                max-height: 300px !important;
+            }
+        `;
+        document.head.appendChild(style);
+    }
+
+    addCustomStyles();
     setInterval(colorRows, 500);
 })();
