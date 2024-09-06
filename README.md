@@ -12,7 +12,7 @@ A browser userscript that enhances Kibana by adding color-coded log rows based o
 - **Firefox**: [Tampermonkey](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)
 - **Safari**: [Userscripts](https://apps.apple.com/us/app/userscripts/id1463298887)
 
-Install the script [here](#). 
+Install the script [here](https://github.com/yunusemregul/kibanaColor/raw/main/kibanacolor.user.js). 
 
 Update the `@include` URL in the script if your Kibana URL differs.
 
