@@ -6,7 +6,7 @@ A browser userscript that enhances Kibana by adding color-coded log rows based o
 
 ## Features
 
-- **Log Level Highlighting**: Colors rows by log level (`DEBUG`, `INFO`, `WARN`, `ERROR`) for quick identification.
+- **Log Level Highlighting**: Colors rows by log level (DEBUG, INFO, WARN, ERROR) for quick identification.
 
 ## Installation
 
@@ -16,7 +16,20 @@ A browser userscript that enhances Kibana by adding color-coded log rows based o
 
 Install the script [here](https://github.com/yunusemregul/kibanaColor/raw/main/kibanacolor.user.js). 
 
-Update the `@include` URL in the script if your Kibana URL differs.
+Update the @include URL in the script if your Kibana URL differs.
+
+### Important Note for Chrome/Edge Users
+If you are using Tampermonkey in Chrome or Edge, you might need to **enable Developer Mode** for the script to work properly. This is because of new security rules in Chrome that require extra permission for browser extensions like Tampermonkey.
+
+#### How to Enable Developer Mode:
+1. Open Chrome/Edge and go to `chrome://extensions` or `edge://extensions`.
+![image](https://github.com/user-attachments/assets/fee1f504-3715-45cd-b3e3-734d30758a9d)
+2. Click **"Manage Extensions"** from the browser menu.
+3. Toggle **"Developer Mode"** at the top-right corner.
+![image](https://github.com/user-attachments/assets/ca7268a6-8000-4e0b-93d8-cb793370d4ff)
+
+**Why is this needed?**  
+Google has introduced extra security restrictions for browser extensions. Some scripts require special permissions that are only granted when Developer Mode is enabled.
 
 ## Usage
 
